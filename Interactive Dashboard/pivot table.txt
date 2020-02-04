@@ -1,0 +1,19 @@
+
+Public Sub CustomerInfoPivot()
+
+Dim pv As PivotTable
+Dim field As PivotField
+Dim name As String
+
+ Set pv = Worksheets("pivot").PivotTables("pv")
+ Set field = pv.PivotFields("Customer Name")
+ name = Worksheets("Customer Dashboard").Range("b3").Value
+ 
+ With pv
+  field.ClearAllFilters
+  field.CurrentPage = name
+  .RefreshTable
+
+ End With
+ 
+End Sub
