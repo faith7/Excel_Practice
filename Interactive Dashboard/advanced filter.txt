@@ -1,0 +1,7 @@
+Private Sub Worksheet_Change(ByVal Target As Range)
+    If Target.Address = "$B$3" Then
+        Range("Table2[#All]").AdvancedFilter Action:=xlFilterInPlace, CriteriaRange _
+                :=Range("B2:E3"), Unique:=False
+    End If
+
+End Sub
