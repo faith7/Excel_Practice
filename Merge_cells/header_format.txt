@@ -1,0 +1,23 @@
+Sub header_format()
+'my frequently used header format
+
+Dim heading As Range, cell As Range
+Set heading = Selection
+
+For Each cell In heading
+    If Not cell.HasFormula Then
+     cell.Value = WorksheetFunction.Proper(cell.Value)
+    End If
+Next cell
+
+    heading.Font.Bold = True
+    With heading
+        .HorizontalAlignment = xlCenter
+        .VerticalAlignment = xlCenter
+        .Font.Name = "Calibri"
+        .Font.Size = 15
+    End With
+    With Selection.Interior
+        .Color = RGB(0, 0, 0)
+    End With
+End Sub
