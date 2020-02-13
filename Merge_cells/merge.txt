@@ -1,0 +1,21 @@
+Public Sub merge_cells()
+
+    Dim rowstart As Range
+    Dim rowend As Range
+    Dim i As Integer
+    
+    Application.DisplayAlerts = False
+    
+    Set rowstart = selection.Cells(1)
+    For i = 1 To selection.Cells.Count
+        'works only when ajacent cells have diff values
+        If selection.Cells(i) <> selection.Cells(i + 1) Then
+            Set rowend = selection.Cells(i)
+            Range(rowstart, rowend).Merge
+            Set rowstart = selection.Cells(i + 1)
+        End If
+    Next
+
+    Application.displayalaerts = True
+    
+End Sub
