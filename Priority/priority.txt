@@ -1,0 +1,21 @@
+Option Explicit
+
+Public Sub priority()
+
+Dim endrow As Integer
+Dim counter As Integer
+Dim i As Integer
+
+endrow = ActiveSheet.Range("b" & Rows.Count).End(xlUp).Row
+counter = 1
+
+For i = 2 To endrow
+     If Cells(i, "b").Value = "yes" Then
+        Cells(i, "a").Clear
+      Else
+      Cells(i, "a").Value = counter
+      counter = counter + 1
+     End If
+Next i
+
+End Sub
