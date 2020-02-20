@@ -1,0 +1,2 @@
+= sum(indirect("a1:a"&row()-1)
+

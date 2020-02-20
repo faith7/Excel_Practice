@@ -1,0 +1,14 @@
+Summary from the video https://www.youtube.com/watch?v=rYdAsxf9EG0
+
+1) =sum(indirect("'"&B3&"'!C4:C11")) b3 has the name of the sheet as its value ex) Korea
+
+2)  = indirect("R10C" & COUNTA(10:10),False)  select the value at the right most column of row#10 
+      false means r1c1 style cell reference
+
+3) vlookup(b1, indirect(b2),2, false) 
+
+4) data validation 
+   LIST => indirect("F2") 
+   ex) G2 dropdown list is dependent on F2 
+
+
