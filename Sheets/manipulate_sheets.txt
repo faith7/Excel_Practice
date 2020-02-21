@@ -1,0 +1,22 @@
+Sub manipulate_sheets()
+
+'loop through the entire worksheets in this workbook
+For i = 1 To ThisWorkbook.Worksheets.Count
+    ThisWorkbook.Worksheets(i).Activate
+    'delete sheet1
+    If Sheets(i).Name = "Sheet1" Then
+       Sheets(i).Delete
+       
+    'hide certain sheets
+    ElseIf Sheets(i).Name = "Sheet2" _
+        Or Sheets(i).Name = "Sheet3" _
+        Or Sheets(i).Name = "Sheet4" Then
+            Sheets(i).Visible = False
+    'reference) unhide certain sheets
+    'Sheets(i).Visible = True
+     
+    End If
+    
+Next i
+
+End Sub
