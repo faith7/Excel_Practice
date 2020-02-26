@@ -1,0 +1,16 @@
+'to check how long it takes to run the macro
+Public Sub count_time()
+Dim start
+
+' use vba timer function to check the starting time.
+start = timer
+
+'run a simple task
+ For Each ws In Worksheets
+   ws.Name = "checking time"
+ Next ws
+   
+'prints on immediate window how long it took to run the simple task
+Debug.Print timer - start
+
+End Sub
