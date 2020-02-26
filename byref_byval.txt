@@ -1,0 +1,5 @@
+In the argument type, 
+byref => returns the origninal value after going through the function.
+         After the function call, it will return the variable value.
+byval => makes a copy of the value and does not change the original value. 
+         The changed value is only within the scope of the new function run.
