@@ -1,3 +1,6 @@
+*from udemy course review
+https://www.udemy.com/course/excel-vba-and-macros-course/
+
 Public Sub comments_list()
 Dim sh As Worksheet
 Dim commt As Comment

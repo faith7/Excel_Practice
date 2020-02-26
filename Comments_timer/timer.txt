@@ -1,3 +1,6 @@
+* from udemy course review
+https://www.udemy.com/course/excel-vba-and-macros-course/ 
+
 'to check how long it takes to run the macro
 Public Sub count_time()
 Dim start
