@@ -1,0 +1,29 @@
+=sumifs(index(F2:H20, match(K6:F1:H1,0), A2:A20, I6)
+
+=sumifs(index((F2:H20, G2:G20, H2:H20),,, match(K6:F1:H1,0)), A2:A20, I6
+
+=sumproduct((A2:A21=j6)*(F1:H1=K6)*F2:H21)
+
+------------------------------------------------
+
+=SUMPRODUCT(1*(B4:B29=L5)*(E4:E29)*F4:F29)
+
+=SUMPRODUCT(--(B4:B29=L5)*(E4:E29)*F4:F29)
+
+------------------------------------
+
+* formulat > evaluate formula 
+// f9 within formula 
+
+------------------------------------------
+
+=SUMPRODUCT(((B4:B29=L11)+(B4:B29=L12))*E4:F29)
+
+=SUMPRODUCT(((E4:E29>L16)*(F4:F29<L17)))
+
+
+
+
+------------------------------
+
+reference video:https://www.xelplus.com/excel-sumproduct-formula-easy-explanation/

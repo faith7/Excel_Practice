@@ -1,0 +1,55 @@
+* I am not the author of this code. 
+* This code is from https://stackoverflow.com/questions/54332281/checking-threaded-comments
+* I only added the comment bloc just to see the effect of commentsthreaded block. 
+
+Private Sub ExcelsNewCommentThreaded()
+    Dim AllCommentsThreaded As Excel.CommentsThreaded
+    Dim OneCommentThreaded As Excel.CommentThreaded
+    Dim AllReplies As Excel.CommentsThreaded
+    Dim OneReply As Excel.CommentThreaded
+    Dim r As Range
+
+    Set AllCommentsThreaded = ActiveSheet.CommentsThreaded
+
+    ' loop over all threaded comments of a worksheet and get their info
+    For Each OneCommentThreaded In AllCommentsThreaded
+        With OneCommentThreaded
+            Debug.Print .Author.Name, .Date, .Text
+            For Each OneReply In .Replies
+                With OneReply
+                    Debug.Print .Author.Name, .Date, OneReply.Text
+                End With
+            Next OneReply
+        End With
+    Next OneCommentThreaded
+
+    Set r = Selection.Cells(1)
+
+'    ' check if the selected cell already contains a threaded comment
+'    If r.CommentThreaded Is Nothing Then
+'        r.AddCommentThreaded ("my new comment")
+'    End If
+'
+'    With r.CommentThreaded
+'        ' get text of comment
+'        Debug.Print .Text
+'
+'        ' add some replies
+'        .AddReply ("my reply 1")
+'        .AddReply ("my reply 2")
+'
+'        ' change text of comment
+'        Debug.Print .Text(Text:="text of comment changed")
+'        Debug.Print .Text
+'
+'        ' change text of a reply
+'        .Replies(1).Text Text:="text of reply 1 changed"
+'        Debug.Print .Replies(1).Text
+'
+'        ' delete second reply
+'        .Replies(2).Delete
+'
+'        ' delete whole comment including its replies
+'        .Delete
+'    End With
+End Sub
