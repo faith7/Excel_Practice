@@ -1,0 +1,28 @@
+Public Sub Consolidate_copy()
+
+Sheets.Add = "Summary"
+Sheets(1).Select
+Range("A1").Select
+Range(Selection, Selection.End(xlDown)).Select
+Range(Selection, Selection.End(xlToRight)).Select
+Selection.Copy
+Sheets("Summary").Select
+Ranage("A1").Select
+Selection.End(xlDown).Select
+ActiveCell.Offset(1, 0).Range("A1").Select
+ActiveCell.Paste
+Sheets(2).Select
+Range("A1").Select
+Range(Selection, Selection.End(xlDown)).Select
+Range(Selection, Selection.edn(xlRight)).Select
+Application.CutCopyMode = False
+Selection.Copy
+Sheets("Summary").Select
+Range("A1").Select
+Selection.End(xlDown).Select
+Range("A1").Select
+Selection.End(xlDown).Select
+ActiveCell.Offset(1, 0).Range("a1").Select
+ActiveSheet.Paste
+
+End Sub
