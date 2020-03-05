@@ -1,0 +1,55 @@
+chapter 1)
+alt + 7 => insert bullet point in the text
+f2 + shift + enter => copy without formatting
+shft + mouse move => draw lines straight /move graphs straight 
+ctrl+shift +-> & ctrl+shift+down arrow => hide unneeded columns/rows
+
+
+
+------------------
+chapter 2) 
+structure dashboard
+
+1)input sheets
+
+2)calculation sheets
+ - calculate once and link it
+1 calculation bloc for each dashboard element
+
+3)presentation sheets
+
+
+----------------
+chapter 3)
+1) contrast -- emphasis
+2) alignment
+(center line, tables)
+3) consistancy
+4) proximity (grouping) => organize contents
+5) balance
+
+max 3 colors other than black, white and grey
+
+
+chapter4)
+- zoom 100% for report sheet
+- remove conditional formatting (find - select)
+- margin (center on horizontally/vertically)
+- with large dataset - replace offset with index // indirect with choose
+- center across selection instead of merge& center
+- group insteaad of hide/unhide
+- name manager type
+- add hyperlink for easy navigation
+- hide unneeded columns/rows
+- protect sheets + select cells => ctrl+1 -> protection sheet -> remove the check box for locked
+
+
+-------
+chapter 5)
+pivot table > connection properties > refresh when opening
+getpivotdata function for more flexibility than pivot table
+analyze > select > entire pivot table
+data> properties > connection properties
+
+
+

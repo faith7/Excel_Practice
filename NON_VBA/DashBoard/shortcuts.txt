@@ -1,0 +1,33 @@
+chapter 1)
+alt + 7 => insert bullet point in the text
+f2 + shift + enter => copy without formatting
+shft + mouse move => draw lines straight /move graphs straight 
+
+
+
+------------------
+chapter 2) 
+structure dashboard
+
+1)input sheets
+
+2)calculation sheets
+ - calculate once and link it
+1 calculation bloc for each dashboard element
+
+3)presentation sheets
+
+
+----------------
+chapter 3)
+1) contrast -- emphasis
+2) alignment
+(center line, tables)
+3) consistancy
+4) proximity (grouping) => organize contents
+5) balance
+
+max 3 colors other than black, white and grey
+
+
+
