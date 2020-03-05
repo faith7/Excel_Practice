@@ -1,0 +1,22 @@
+Public Sub Special_cells()
+
+'Write none to empty cells
+
+Selection.CurrentRegion.Select
+Selection.SpecialCells(xlCellTypeBlanks).Select
+Selection.fomulaR1C1 = "None"
+
+End Sub
+
+
+
+Public Sub Highlight_cells()
+
+Selection.CurrentRegion.Select
+Selection.SpecialCells(xlcelltypformulas, 23).Select
+With Selection.Interior
+.Pattern = xlSolid
+.Color = 65535
+End With
+
+End Sub

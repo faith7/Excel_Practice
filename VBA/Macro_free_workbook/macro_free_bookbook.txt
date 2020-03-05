@@ -1,0 +1,27 @@
+Option Explicit
+
+
+Public Sub Macro_free()
+
+    Dim wb As Workbook
+    Dim Path As String
+
+    Set wb = ThisWorkbook
+    Path = wb.FullName
+    
+    Path = Replace(Path, ".xlsm", "")
+    
+    Application.DisplayAlerts = False
+    Application.EnableEvents = False
+    
+    wb.SaveAs Filename:=Path & "_" & VBA.Format(VBA.Date, "YYYY-MM-DD") & "_Test.xlsx", FileFormat:=51
+    
+    
+    Application.DisplayAlerts = True
+    Application.EnableEvents = True
+    
+End Sub
+
+
+
+
